@@ -15,12 +15,37 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.game {
+  width: 200px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
 }
+
+.game img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.game-search-results-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 200px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.movie-search-results-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
