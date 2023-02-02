@@ -2,6 +2,7 @@ import Head from 'next/head'
 import getConfig from 'next/config';
 import Movie from '../comps/moviecard';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -39,6 +40,9 @@ export default function Moviepage(initialData) {
           <input className='search' name='searchTerm' value={searchTerm} onChange={handleInputs} type="text" required />
           <button className='btn-search'>search</button>
         </form>
+        <Link href='/'>
+          <button>Go Home</button>
+        </Link>
       </div>
 
     <div className='movie-search-results-grid'>
