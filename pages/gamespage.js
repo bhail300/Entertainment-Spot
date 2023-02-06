@@ -1,8 +1,9 @@
-import Head from 'next/head'
 import getConfig from 'next/config';
 import Game from '../comps/gamecard';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import Nav from '../comps/navbar';
+import { Input, css, Button } from "@nextui-org/react";
+
 
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -31,20 +32,23 @@ export default function Gamepage(initialData) {
   }
 
   return (
-    <div className='container'>
-      <Head>
-        <h1>Games</h1>
-      </Head>
-      <div>
-        <form onSubmit={search}> 
-          <input className='search' name='searchTerm' value={searchTerm} onChange={handleInputs} type="text" required />
-          <button className='btn-search'>search</button>
-        </form>
-        <Link href='/'>
-          <button>Go Home</button>
-        </Link>
-      </div>
+    <div>
+    <Nav/>
+    
+        <form onSubmit={search} className='form-box' > 
+          <Input  labelPlaceholder="Games"
+           initialValue="Search Games" 
+           className='search' 
+           name='searchTerm'
+            value={searchTerm} 
+            onChange={handleInputs} 
+            type="text" required
+            />
 
+          <Button  className='btn-search'>search</Button>
+        </form>
+      
+        <div className='container'>
     <div className='game-search-results-grid'>
       {searchResults.map((each) => {
         return(
@@ -57,8 +61,9 @@ export default function Gamepage(initialData) {
         )
       })}
     </div>
-
     </div>
+    </div>
+    
   )
 }
 

@@ -2,7 +2,8 @@ import Head from "next/head";
 import getConfig from "next/config";
 import Movie from "../comps/moviecard";
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Nav from "../comps/navbar";
+import { Button, Input } from "@nextui-org/react";
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 
@@ -36,25 +37,22 @@ export default function Moviepage(initialData) {
   };
 
   return (
-    <div className="container">
-      <Head>
-        <h1>Movies</h1>
-      </Head>
+    <div>
+      <Nav/>
       <div>
-        <form onSubmit={search}>
-          <input
-            className="search"
-            name="searchTerm"
-            value={searchTerm}
-            onChange={handleInputs}
-            type="text"
-            required
-          />
-          <button className="btn-search">search</button>
+      <form onSubmit={search} className='form-box' > 
+          <Input  labelPlaceholder="Movies"
+           initialValue="Search Movies" 
+           className='search' 
+           name='searchTerm'
+            value={searchTerm} 
+            onChange={handleInputs} 
+            type="text" required
+            />
+           <Button className='btn-search'>search</Button>
         </form>
-        <Link href="/">
-          <button>Go Home</button>
-        </Link>
+
+
       </div>
 
       <div className="movie-search-results-grid">

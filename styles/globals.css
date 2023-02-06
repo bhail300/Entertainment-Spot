@@ -49,3 +49,21 @@ a {
   flex-wrap: wrap;
 }
 
+.form-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  
+  .btn-search {
+    background: #d41941;
+    height: 39px;
+  }
+
+
+
+
