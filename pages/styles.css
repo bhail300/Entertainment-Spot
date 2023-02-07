@@ -9,3 +9,10 @@ body {
     margin: auto;
     padding: 0px 40px;
 }
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
