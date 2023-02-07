@@ -1,4 +1,3 @@
-import Head from "next/head";
 import getConfig from "next/config";
 import Movie from "../comps/moviecard";
 import { useEffect, useState } from "react";
@@ -52,7 +51,6 @@ export default function Moviepage(initialData) {
            <Button className='btn-search'>search</Button>
         </form>
 
-
       </div>
 
       <div className="movie-search-results-grid">
@@ -61,6 +59,7 @@ export default function Moviepage(initialData) {
             <Movie
               id={index}
               index={each.id}
+              original_name={each.name}
               title={each.title}
               poster_path={each.poster_path}
             />

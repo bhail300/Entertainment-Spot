@@ -30,6 +30,7 @@ a {
 .game-search-results-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -47,6 +48,7 @@ a {
 .movie-search-results-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form-box {
