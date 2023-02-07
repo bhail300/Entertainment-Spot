@@ -3,7 +3,7 @@ import Game from '../comps/gamecard';
 import { useEffect, useState } from 'react';
 import Nav from '../comps/navbar';
 import { Input, css, Button } from "@nextui-org/react";
-
+import axios from 'axios'
 
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -25,10 +25,9 @@ export default function Gamepage(initialData) {
 
   const search = async (event) => {
     event.preventDefault()
-    let games = await fetch(`https://api.rawg.io/api/games?key=${process.env.NEXT_PUBLIC_API_KEY}&language=en=US&query=${formInput.searchTerm}&page-1&include_adult=false`)
+    let games = await axios(`https://api.rawg.io/api/games?key=${process.env.NEXT_PUBLIC_API_KEY}&language=en=US&query=${formInput.searchTerm}&page-1&include_adult=false`)
     games = await games.json()
     setSearchResults(games.results)
-  
   }
 
   return (
@@ -68,11 +67,10 @@ export default function Gamepage(initialData) {
 }
 
 export async function getServerSideProps(context) {
-  let Games = await fetch(`https://api.rawg.io/api/games?key=${serverRuntimeConfig.apiKey}`)
-  Games = await Games.json()
+  let Games = await axios.get(`https://api.rawg.io/api/games?key=${serverRuntimeConfig.apiKey}`)
+  Games = Games.data
   console.log(Games)
   return {
     props: {Games: Games}, //passed to the page component as props
-  
   }
 }
