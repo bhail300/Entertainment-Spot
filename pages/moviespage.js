@@ -3,6 +3,7 @@ import Movie from "../comps/moviecard";
 import { useEffect, useState } from "react";
 import Nav from "../comps/navbar";
 import { Button, Input } from "@nextui-org/react";
+import axios from 'axios'
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 
@@ -27,7 +28,7 @@ export default function Moviepage(initialData) {
 
   const search = async (event) => {
     event.preventDefault();
-    let movies = await fetch(
+    let movies = await axios(
       `https://api.themoviedb.org/3/search/movie?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en=US&query=${formInput.searchTerm}&page-1&include_adult=false`
     );
     movies = await movies.json();
@@ -71,12 +72,13 @@ export default function Moviepage(initialData) {
 }
 
 export async function getServerSideProps(context) {
-  let Movies = await fetch(
+  let Movies = await axios.get(
     `https://api.themoviedb.org/3/trending/all/day?api_key=${serverRuntimeConfig.apiKey2}`
   );
-  Movies = await Movies.json();
+  Movies = Movies.data
   console.log(Movies);
   return {
     props: { Movies: Movies }, //passed to the page component as props
   };
 }
+
