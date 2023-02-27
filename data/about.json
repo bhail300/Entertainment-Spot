@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Zahir",
+        "img": "/favicon.ico",
+        "role_des": "Front-end web developer",
+        "bio_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, dui sit amet tristique convallis, risus justo pellentesque elit, gravida sollicitudin tellus metus sed tellus. Cras vitae sollicitudin nunc. Pellentesque eu felis   ut quam condimentum commodo scelerisque eu arcu."
+    },
+    {
+        "name": "Blen",
+        "img": "/favicon.ico",
+        "role_des": "Front-end web developer",
+        "bio_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, dui sit amet tristique convallis, risus justo pellentesque elit, gravida sollicitudin tellus metus sed tellus. Cras vitae sollicitudin nunc. Pellentesque eu felis   ut quam condimentum commodo scelerisque eu arcu."
+    },
+    {
+        "name": "Horus",
+        "img": "/favicon.ico",
+        "role_des": "Front-end web developer",
+        "bio_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, dui sit amet tristique convallis, risus justo pellentesque elit, gravida sollicitudin tellus metus sed tellus. Cras vitae sollicitudin nunc. Pellentesque eu felis   ut quam condimentum commodo scelerisque eu arcu."
+    }
+]
