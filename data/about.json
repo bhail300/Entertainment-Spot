@@ -1,20 +1,26 @@
 [
     {
-        "name": "Zahir",
+        "name": "Zahir Ali",
         "img": "/favicon.ico",
-        "role_des": "Front-end web developer",
-        "bio_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, dui sit amet tristique convallis, risus justo pellentesque elit, gravida sollicitudin tellus metus sed tellus. Cras vitae sollicitudin nunc. Pellentesque eu felis   ut quam condimentum commodo scelerisque eu arcu."
+        "role_des": "Front-end web developer, Graphic Designer",
+        "portfolio_link":"http://zxhirali.ca",
+        "github_link": "https://github.com/ZahirA1i",
+        "bio_des": "Zahir is a Graphic Designer who is always trying to push the beyond the boundries of his creative abilities. Working on the Entertainment Spot has helped him improve his styling capabilities as well as his overall coding skills. Be sure to check out Zahir's portfolio site and Github page to see the many other amazing projects he has worked on."
     },
     {
-        "name": "Blen",
+        "name": "Blen Haile",
         "img": "/favicon.ico",
-        "role_des": "Front-end web developer",
-        "bio_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, dui sit amet tristique convallis, risus justo pellentesque elit, gravida sollicitudin tellus metus sed tellus. Cras vitae sollicitudin nunc. Pellentesque eu felis   ut quam condimentum commodo scelerisque eu arcu."
+        "role_des": "Front-end web developer, UI/UX Designer",
+        "portfolio_link":"https://blenhaile.ca/",
+        "github_link": "https://github.com/bhail300",
+        "bio_des": "Blen Haile is a UI/UX Designer who is passionate about creating wonderful user experiences. It is Blen's hope to use his design and development skill set to continute to create applications with bug-free functionality as well as sleek, appealling aesthetics. You can view more of Blen's work on his portfolio site and Github page."
     },
     {
-        "name": "Horus",
+        "name": "Horus Wan",
         "img": "/favicon.ico",
-        "role_des": "Front-end web developer",
-        "bio_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, dui sit amet tristique convallis, risus justo pellentesque elit, gravida sollicitudin tellus metus sed tellus. Cras vitae sollicitudin nunc. Pellentesque eu felis   ut quam condimentum commodo scelerisque eu arcu."
+        "role_des": "Front-end web developer, UI/UX Designer",
+        "portfolio_link":"Portfolio site goes here",
+        "github_link": "https://github.com/HorusWan",
+        "bio_des": "Horus is a UI/UX Designer with an eye for great design. His styling abilities have improved a lot through the development of The Entertainment Spot. It has tested the limits of his coding abilities and has helped him evolve as a developer. Horus has many more excellent projects to view on his portfolio site as well as his Github page."
     }
 ]
