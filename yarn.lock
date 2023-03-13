@@ -199,6 +199,16 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
+"@playwright/test@^1.31.2":
+  version "1.31.2"
+  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.31.2.tgz"
+  integrity sha512-BYVutxDI4JeZKV1+ups6dt5WiqKhjBtIYowyZIJ3kBDmJgsuPKsqqKNIMFbUePLSCmp2cZu+BDL427RcNKTRYw==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.31.2"
+  optionalDependencies:
+    fsevents "2.3.2"
+
 "@react-aria/button@3.6.2":
   version "3.6.2"
   resolved "https://registry.npmjs.org/@react-aria/button/-/button-3.6.2.tgz"
@@ -790,6 +800,11 @@
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+
+"@types/node@*":
+  version "18.15.1"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.15.1.tgz"
+  integrity sha512-U2TWca8AeHSmbpi314QBESRk7oPjSZjDsR+c+H4ECC1l+kFgpZf8Ydhv3SJpPy51VyZHHqxlb6mTTqYNNRVAIw==
 
 "@typescript-eslint/parser@^5.42.0":
   version "5.48.2"
@@ -2260,6 +2275,11 @@ picomatch@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
+
+playwright-core@1.31.2:
+  version "1.31.2"
+  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.31.2.tgz"
+  integrity sha512-a1dFgCNQw4vCsG7bnojZjDnPewZcw7tZUNFN0ZkcLYKj+mPmXvg4MpaaKZ5SgqPsOmqIf2YsVRkgqiRDxD+fDQ==
 
 postcss@8.4.14:
   version "8.4.14"

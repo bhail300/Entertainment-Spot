@@ -49,9 +49,10 @@ export default function Gamepage(initialData) {
       
         <div className='container'>
     <div className='game-search-results-grid'>
-      {searchResults.map((each) => {
+      {searchResults.map((each, index) => {
         return(
           <Game
+          key={index}
           name={each.name}
           released={each.released}
           rating={each.rating}

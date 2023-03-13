@@ -58,6 +58,7 @@ export default function Moviepage(initialData) {
         {searchResults.map((each, index) => {
           return (
             <Movie
+              key={index}
               id={index}
               index={each.id}
               original_name={each.name}
