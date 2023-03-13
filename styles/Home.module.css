@@ -2,6 +2,7 @@
   padding: 0 2rem;
 }
 
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -113,7 +114,10 @@
     width: 100%;
     flex-direction: column;
   }
+  
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   .card,
@@ -127,3 +131,5 @@
     filter: invert(1);
   }
 }
+
+
