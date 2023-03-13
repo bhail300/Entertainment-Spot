@@ -37,6 +37,7 @@ export default function About() {
                             <div>
                                 <Image
                                 src={info.img}
+                                alt="favicon"
                                 width='100'
                                 height='100'
                                 />
