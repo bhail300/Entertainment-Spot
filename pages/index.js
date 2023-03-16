@@ -18,23 +18,33 @@ const menuStyle = {
 };
 
 export default function Home() {
-  const text = "E-SPOT is a entertainment web app using RAWG.io & themoviedb.org api to view trending Games and Movies"
   return (
-    <div>
-      <Nav/>
+  <>
+    <Head>
+        <title>Home</title>
+        <meta name="author" content="Blen, Horus, Zahir" />
+        <meta property="og:title" content="Entertainment-Spot" />
+        <meta property="og:description" content="BCIT Digital Design and Development Program" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+    </Head>
+    <main>
       <div>
-        <Menutitlecard/>
-        <div style={containerStyle}>
-          <div style={menuStyle}>
-            <Moviemenu />
-          </div>
-          <div style={menuStyle}>
-            <Gamemenu />
+        <Nav/>
+        <div>
+          <Menutitlecard/>
+          <div style={containerStyle}>
+            <div style={menuStyle}>
+              <Moviemenu />
+            </div>
+            <div style={menuStyle}>
+              <Gamemenu />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
+    </main>
+    </>
   );
 }
 

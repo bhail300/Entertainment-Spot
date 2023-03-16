@@ -31,9 +31,9 @@ export default function Gamepage(initialData) {
   }
 
   return (
+  <main>
     <div>
     <Nav/>
-    
         <form onSubmit={search} className='form-box' > 
           <Input  labelPlaceholder="Games"
            initialValue="Search Games" 
@@ -63,6 +63,7 @@ export default function Gamepage(initialData) {
     </div>
     </div>
     </div>
+  </main>
     
   )
 }
