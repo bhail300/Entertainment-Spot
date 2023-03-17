@@ -23,7 +23,7 @@ export default function About() {
                     <h3>App development finish date:</h3>
                     <p>Ongoing</p>
                     <h3>Github link:</h3>
-                    <p> <Link href='https://github.com/bhail300/Entertainment-Spot'>Entertainment Spot</Link></p>
+                    <p> <a href='https://github.com/bhail300/Entertainment-Spot'>Entertainment Spot</a></p>
                 </div>
                 <h2>Meet the Developers</h2>
                 <div className={styles.grid}>
