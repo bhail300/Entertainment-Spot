@@ -19,15 +19,6 @@ const menuStyle = {
 
 export default function Home() {
   return (
-  <>
-    <Head>
-        <title>Home</title>
-        <meta name="author" content="Blen, Horus, Zahir" />
-        <meta property="og:title" content="Entertainment-Spot" />
-        <meta property="og:description" content="BCIT Digital Design and Development Program" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-    </Head>
     <main>
       <div>
         <Nav/>
@@ -44,7 +35,6 @@ export default function Home() {
         </div>
       </div>
     </main>
-    </>
   );
 }
 
