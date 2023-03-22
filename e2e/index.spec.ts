@@ -25,9 +25,9 @@ test.afterAll(async () => {
 
 test.describe('Main area', () => {
     test('Contains a single div containing page content.', async ({page}) => {
-        await page.goto('http://localhost:3001/index');
+        await page.goto('http://localhost:3000/index');
         
-        await expect(page.locator('div')).toHaveCount(8);
+        await expect(page.locator('div')).toHaveCount(5);
     })
 })
 

@@ -10,7 +10,7 @@ test.afterAll(async () => {
 
 test.describe('Main area', () => {
     test('Contains 1 form in moviespage.', async ({page}) => {
-        await page.goto('http://localhost:3001/moviespage');
+        await page.goto('http://localhost:3000/moviespage');
         
         await expect(page.locator('div > form')).toHaveCount(1);
     })
