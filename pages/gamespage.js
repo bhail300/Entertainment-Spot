@@ -1,3 +1,4 @@
+import Head from "next/head";
 import getConfig from 'next/config';
 import Game from '../comps/gamecard';
 import { useEffect, useState } from 'react';
@@ -31,6 +32,15 @@ export default function Gamepage(initialData) {
   }
 
   return (
+    <>
+    <Head>
+        <title>Games</title>
+        <meta name="author" content="Blen, Horus, Zahir" />
+        <meta property="og:title" content="Entertainment-Spot" />
+        <meta property="og:description" content="BCIT Digital Design and Development Program" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/e_spot.svg" />
+    </Head>
   <main>
     <div>
     <Nav/>
@@ -64,7 +74,7 @@ export default function Gamepage(initialData) {
     </div>
     </div>
   </main>
-    
+  </>
   )
 }
 

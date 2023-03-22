@@ -9,7 +9,7 @@ export const Menutitlecard = () => (
             Entertainment-Spot
           </Text>
           <Text h2 color="white">
-            Find your entertain
+            Find your entertainment
           </Text>
         </Col>
       </Card.Header>

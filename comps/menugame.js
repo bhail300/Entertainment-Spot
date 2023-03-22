@@ -1,4 +1,5 @@
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import Link from "next/link";
 
 export const Gamemenu = () => (
   <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "80vh" }}>
@@ -15,30 +16,33 @@ export const Gamemenu = () => (
             Games
           </Text>
           <Text h2 color="white">
-            Browse Your Game
+            Browse Your Games
           </Text>
         </div>
       </Card.Body>
       <div style={{ position: "absolute", bottom: "50px", right: "50px" }}>
-        <Button
-          flat
-          auto
-          rounded
-          css={{
-            color: "#94f9f0",
-            bg: "$red700",
-            width: "320px",
-          }}
-        >
-          <Text
-            css={{ color: "inherit" }}
-            size={12}
-            weight="bold"
-            transform="uppercase"
+        <Link href="/gamespage">
+          <Button
+            flat
+            auto
+            rounded
+            css={{
+              color: "#94f9f0",
+              bg: "$red700",
+              width: "320px",
+              
+            }}
           >
-            Browse Now
-          </Text>
-        </Button>
+            <Text
+              css={{ color: "inherit" }}
+              size={12}
+              weight="bold"
+              transform="uppercase"
+            >
+              Browse Now
+            </Text>
+          </Button>
+        </Link>
       </div>
     </Card>
   </div>
